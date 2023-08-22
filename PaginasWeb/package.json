@@ -1,0 +1,17 @@
+{
+  "name": "PaginasWeb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "postcss ./src/tailwind.css -0 ./public/css/main.css",
+    "build": "NODE_ENV=PRODUCTION postcss ./src/tailwind.css -0 ./public/css/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
