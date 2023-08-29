@@ -1,3 +1,5 @@
+@use 'sass:map';
+
 //Variables
 //Theme colors
 $primary: cornflowerblue;
@@ -20,3 +22,35 @@ $base-margin: 0.75 rems;
 //Bordes (borders)
 $base-border-width: 1px;
 $base_border-radius: 15px;
+
+//Box shadow
+$base-box-shadow: 1px 3px 5px rgba(0,0,0,1);
+//$base-font-size: 1rem;
+//letra responsiba
+$base-font-size: calc(15px + 0.3966125vw);
+//letra responsiba con mas vision
+//$base-font-size: calc(15px + 5vw);
+$font-size-sm: calc($base-font-size * 0.75);
+$font-size-lg: calc($base-font-size * 1.5);
+$font-size-xl: calc($base-font-size * 2);
+$font-size-xxl: calc($base-font-size * 3);
+
+//variables maps
+$colors: (
+    "primary" : $primary,
+    "secundary": $secundary,
+    "error": $error,
+    "info": $info,
+    "white": $white,
+    "black": $black,
+
+);
+
+/*.button{
+    font-family: Lobster;
+    color: $white;
+    border: 0;
+    background-color: map.get($colors , "info" );
+    cursor: pointer;
+    
+};*/

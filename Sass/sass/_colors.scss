@@ -1,0 +1,6 @@
+@use 'variables' as v;
+@each $i, $val in v.$colors{
+    .text-#{$i}{
+        color:$val;
+    }
+}
