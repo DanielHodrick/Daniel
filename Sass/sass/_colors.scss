@@ -3,4 +3,7 @@
     .text-#{$i}{
         color:$val;
     }
+    .bg-#{$i}{
+        background-color: $val;
+    }
 }

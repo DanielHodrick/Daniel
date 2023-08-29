@@ -68,24 +68,48 @@ img {
   color: cornflowerblue;
 }
 
+.bg-primary {
+  background-color: cornflowerblue;
+}
+
 .text-secundary {
   color: #1ac861;
+}
+
+.bg-secundary {
+  background-color: #1ac861;
 }
 
 .text-error {
   color: tomato;
 }
 
+.bg-error {
+  background-color: tomato;
+}
+
 .text-info {
   color: #f6c31c;
+}
+
+.bg-info {
+  background-color: #f6c31c;
 }
 
 .text-white {
   color: #fff;
 }
 
+.bg-white {
+  background-color: #fff;
+}
+
 .text-black {
   color: #000;
+}
+
+.bg-black {
+  background-color: #000;
 }
 
 /*
