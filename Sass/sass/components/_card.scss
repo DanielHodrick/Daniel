@@ -2,7 +2,7 @@
 @use '../variables' as v;
 .card{
     display: block;
-    //background-color: v.$secundary;
+    //background-color: v.$white;
     padding: v.$base-padding;
     
     border: v.$base-border-width solid #ddd;
@@ -34,4 +34,7 @@
             text-decoration: underline;
         }
     }
+    
 }
+
+

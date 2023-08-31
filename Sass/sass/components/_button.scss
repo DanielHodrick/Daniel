@@ -1,0 +1,81 @@
+@use '../variables' as v;
+@use 'sass:color';
+//con un valor por defecto
+
+//@mixin btn-reset($bg-color ){
+//con un valor por defecto
+@mixin btn-reset($bg-color: v.$white, $border:0){
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    padding: v.$base-padding v.$base-padding*2;// primero en el eje vertical, segundo en el eje horizontal
+    border-radius: v.$base_border-radius;
+    background-color: $bg-color;
+    //llamado de border
+    border: $border;
+}
+//codigo sin programacion
+@each $key, $val in v.$colors{
+    .btn-#{$key}{
+        //@include btn-reset();
+        @include btn-reset($val);
+        //se simplifica con la llamada del mixis
+        //border: 0;
+        //background-color: $val;
+        &:hover{
+            @if($val != white){
+                background-color: color.adjust($val, $lightness: 18%);
+            }
+            @else{
+                background-color: color.adjust($val, $lightness: -20%);
+            }
+            //claro
+            //background-color: color.adjust($val, $lightness: 20%);
+            //oscuro
+            
+        }
+    }
+    .btn-outline-#{$key}{
+        //@include btn-reset();
+        @include btn-reset($border: v.$base-border-width solid $val);
+        //simplificacion con los mixis
+        //border: v.$base-border-width solid $val;
+        //background-color: v.$white;
+        &:hover{
+            
+            background-color: $val;
+            color:v.$white;
+            /*@if($val!=white){
+                
+                
+            }
+            @else{
+                color: black;
+            }*/
+        }
+    }
+}
+
+
+//codigo con repeticion  "s" demas en key
+
+//@each $key, $val in v.$colors{
+//    .btn-#{$key}{
+//        text-decoration: none;
+//        cursor: pointer;
+//        display: inline-block;
+//        border: 0;
+//        padding: v.$base-padding v.$base-padding*2;// primero en el eje vertical, segundo en el eje horizontal
+//        border-radius: v.$base_border-radius;
+//        background-color: $val;
+//    }
+//    .btn-outline-#{$key}{
+//        text-decoration: none;
+//        cursor: pointer;
+//        display: inline-block;
+//        border: v.$base-border-width solid $val;
+//        padding: v.$base-padding v.$base-padding*2;// primero en el eje vertical, segundo en el eje horizontal
+//        border-radius: v.$base_border-radius;
+//        background-color: v.$white;
+//    }
+//}

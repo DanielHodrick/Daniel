@@ -1,9 +1,26 @@
+
 @use 'variables' as v;
+@use 'sass:color';
 @each $i, $val in v.$colors{
     .text-#{$i}{
         color:$val;
     }
     .bg-#{$i}{
         background-color: $val;
+    }
+    @if($val != white){
+        @for $g from 1 through 4{
+            .bg-#{$i}-light-#{$g}{
+                background-color: color.adjust($val, $lightness: ($g*6.5%));
+            }
+        }
+    }
+    
+    @if($val != black){
+        @for $g from 1 through 4{
+            .bg-#{$i}-dark-#{$g}{
+                background-color: color.adjust($val, $lightness: -($g*8.5%));
+            }
+        }
     }
 }
