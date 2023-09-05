@@ -1,0 +1,36 @@
+@use 'sass:map';
+
+$breakpoints:(
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+
+);
+@mixin breakpoint($bp: 0){
+    @media (min-width: $bp){
+        @content;
+    }
+};
+.resp-text{
+    @include breakpoint{
+        background-color: red;
+    }
+    @include breakpoint(map.get($breakpoints, "sm")){
+        background-color: gray;
+    }
+    @include breakpoint(map.get($breakpoints, "md")){
+        background-color: blue;
+    }
+    @include breakpoint(map.get($breakpoints, "lg")){
+        background-color: purple;
+    }
+    @include breakpoint(map.get($breakpoints, "xl")){
+        background-color: yellow;
+    }
+    @include breakpoint(map.get($breakpoints, "xxl")){
+        background-color: skyblue;
+    }
+}
