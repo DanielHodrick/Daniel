@@ -14,7 +14,7 @@ $breakpoints:(
         @content;
     }
 };
-.resp-text{
+/*.resp-text{
     @include breakpoint{
         background-color: red;
     }
@@ -33,4 +33,4 @@ $breakpoints:(
     @include breakpoint(map.get($breakpoints, "xxl")){
         background-color: skyblue;
     }
-}
+}*/

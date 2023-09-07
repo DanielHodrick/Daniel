@@ -1,108 +1,208 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uso de Sass</title>
-    <link rel="stylesheet" href="dist/css/styles.min.css"></LInk>
+    <link rel="stylesheet" href="dist/css/styles.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
-    <!--
-    <h1>HOLA MUNDO DESDE SASS</h1>
-    <a href="#">link de hola mundo desde Sass</a>
-    <p class="error">Mensaje de error</p>
-    <p class="notificacion">Mensaje de notificacion</p> 
-    <button class="button">No presionar el Haz click</button>-->
-   
-    <h2>  Cards </h2>
+
+    <nav>
+        <aside class="navbar">
+            <div class="logo">
+                <h1>App</h1>
+            </div>
+            <div class="menu-toggle-warp">
+                <input type="checkbox"  class="btn-menu" name="btn-menu" id="btn-menu" >
+                <!-- el input se vincula con el laber con el for del laber y eñ ide de input-->
+                <label for="btn-menu" class="material-icons menu-toggle">double_arrow</label>
+            </div>
+            <h3> menu</h3>
+            <div class="menu">
+                <a href="#" class="button">
+                    <span class="material-icons">home</span>
+                    <span class="text">Home</span>
+                </a>
+                <a href="#" class="button">
+                    <span class="material-icons">description</span>
+                    <span class="text">About</span>
+                </a>
+                <a href="#" class="button">
+                    <span class="material-icons">group</span>
+                    <span class="text">Team</span>
+                </a>
+                <a href="#" class="button">
+                    <span class="material-icons">email</span>
+                    <span class="text">Contactos</span>
+                </a>
+            </div>
+            <div class="flex"></div>
+            <div class="menu">
+                <a href="#" class="button">
+                    <span class="material-icons">settings</span>
+                    <span class="text">Settings</span>
+                </a>
+            </div>
+
+        </aside>
+    </nav>
+    <main class="container">
+        <!--
+        <h1>HOLA MUNDO DESDE SASS</h1>
+        <a href="#">link de hola mundo desde Sass</a>
+        <p class="error">Mensaje de error</p>
+        <p class="notificacion">Mensaje de notificacion</p> 
+        <button class="button">No presionar el Haz click</button>-->
+
+        <h2> Cards </h2>
         <div class="card">
             <h1 class="card-title"> Titulo del card</h1>
-            <p class="card-body"> Cuerpo del card Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque adipisci unde facere deserunt pariatur veniam voluptas fugiat omnis sapiente delectus! Nesciunt, commodi omnis! Maiores, sunt perspiciatis mollitia aliquid reiciendis cumque. <a href="#">leer mas..</a> </p>
+            <p class="card-body"> Cuerpo del card Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+                adipisci unde facere deserunt pariatur veniam voluptas fugiat omnis sapiente delectus! Nesciunt, commodi
+                omnis! Maiores, sunt perspiciatis mollitia aliquid reiciendis cumque. <a href="#">leer mas..</a> </p>
 
         </div>
-    <h2>Colores</h2>
-    <div class="text-primary">Texto de prueba </div>
-    <div class="text-secundary">Texto de prueba </div>
-    <div class="text-info">Texto de prueba </div>
-    <div class="text-error">Texto de prueba </div>
-    <div class="text-white">Texto de prueba </div>
-    <div class="text-black">Texto de prueba </div>
-    <h2> Fondo de colores</h2>
-    <div class="bg-primary">texto de prueba </div>
-    <div class="bg-secundary">texto de prueba </div>
-    <div class="bg-info">texto de prueba </div>
-    <div class="bg-error">texto de prueba </div>
-    <div class="bg-white">texto de prueba </div>
-    <div class="bg-black">texto de prueba </div>
- 
-    <br>
-    <div class="bg-primary-dark-4">texto de prueba </div>
-    <div class="bg-primary-dark-3">texto de prueba </div>
-    <div class="bg-primary-dark-2">texto de prueba </div>
-    <div class="bg-primary-dark-1">texto de prueba </div>
-    <div class="bg-primary">texto de prueba </div>
-    <div class="bg-primary-light-1">texto de prueba </div>
-    <div class="bg-primary-light-2">texto de prueba </div>
-    <div class="bg-primary-light-3">texto de prueba </div>
-    <div class="bg-primary-light-4">texto de prueba </div>
-    <br>
+        <h2>Colores</h2>
+        <div class="text-primary">Texto de prueba </div>
+        <div class="text-secundary">Texto de prueba </div>
+        <div class="text-info">Texto de prueba </div>
+        <div class="text-error">Texto de prueba </div>
+        <div class="text-white">Texto de prueba </div>
+        <div class="text-black">Texto de prueba </div>
+        <h2> Fondo de colores</h2>
+        <div class="bg-primary">texto de prueba </div>
+        <div class="bg-secundary">texto de prueba </div>
+        <div class="bg-info">texto de prueba </div>
+        <div class="bg-error">texto de prueba </div>
+        <div class="bg-white">texto de prueba </div>
+        <div class="bg-black">texto de prueba </div>
 
-    <div class="bg-secundary-dark-4">texto de prueba </div>
-    <div class="bg-secundary-dark-3">texto de prueba </div>
-    <div class="bg-secundary-dark-2">texto de prueba </div>
-    <div class="bg-secundary-dark-1">texto de prueba </div>
-    <div class="bg-secundary">texto de prueba </div>
-    <div class="bg-secundary-light-1">texto de prueba </div>
-    <div class="bg-secundary-light-2">texto de prueba </div>
-    <div class="bg-secundary-light-3">texto de prueba </div>
-    <div class="bg-secundary-light-4">texto de prueba </div>
-    <br>
-    <div class="bg-info-dark-4">texto de prueba </div>
-    <div class="bg-info-dark-3">texto de prueba </div>
-    <div class="bg-info-dark-2">texto de prueba </div>
-    <div class="bg-info-dark-1">texto de prueba </div>
-    <div class="bg-info">texto de prueba </div>
-    <div class="bg-info-light-1">texto de prueba </div>
-    <div class="bg-info-light-2">texto de prueba </div>
-    <div class="bg-info-light-3">texto de prueba </div>
-    <div class="bg-info-light-4">texto de prueba </div>
-    <br>
-    <H2>Botones</H2>
-    <a href="#" class="btn-primary text-white"> Haz click</a>
-    <a href="#" class="btn-secundary text-white">Haz click</a>
-    <a href="#" class="btn-info text-white">Haz click</a>
-    <a href="#" class="btn-error text-white">Haz click</a>
-    <a href="#" class="btn-black text-white">Haz click</a>
-    <a href="#" class="btn-white text-black">Haz click</a>
-    <H2>Botones</H2>
-    <a href="#" class="btn-outline-primary text-primary"> Haz click</a>
-    <a href="#" class="btn-outline-secundary text-secundary">Haz click</a>
-    <a href="#" class="btn-outline-info text-info">Haz click</a>
-    <a href="#" class="btn-outline-error text-error">Haz click</a>
-    <a href="#" class="btn-outline-black text-black">Haz click</a>
-    <a href="#" class="btn-outline-white text-black">Haz click</a>
-    <br>
-    <h1 class="btn-primary font-sm">HOLA MUNDO DESDE SASS</h1>
-    <h1 class="btn-secundary font-xxl">HOLA MUNDO DESDE SASS</h1>
-    <h1 class="bg-info-light-4 mb-2">HOLA MUNDO DESDE SASS</h1>
-    <h1 class="bg-info-dark-1 d-f">HOLA MUNDO DESDE SASS</h1>
-    <h1 class="o-10">HOLA MUNDO DESDE SASS</h1>
-    <h1 class="o-30">HOLA MUNDO DESDE SASS</h1>
-    <h1 class="o-60">HOLA MUNDO DESDE SASS</h1>
-    <h1 class="o-80">HOLA MUNDO DESDE SASS</h1>
-    
-    <h1 class="btn-outline-info o-50">HOLA MUNDO DESDE SASS</h1>
-    <h1 class="br-xs">HOLA MUNDO DESDE SASS</h1>
-    
-    <h1 class="btn-error mb-4">HOLA MUNDO DESDE SASS</h1>
+        <br>
+        <div class="bg-primary-dark-4">texto de prueba </div>
+        <div class="bg-primary-dark-3">texto de prueba </div>
+        <div class="bg-primary-dark-2">texto de prueba </div>
+        <div class="bg-primary-dark-1">texto de prueba </div>
+        <div class="bg-primary">texto de prueba </div>
+        <div class="bg-primary-light-1">texto de prueba </div>
+        <div class="bg-primary-light-2">texto de prueba </div>
+        <div class="bg-primary-light-3">texto de prueba </div>
+        <div class="bg-primary-light-4">texto de prueba </div>
+        <br>
 
-    <h2 class="mb-2"> Media Querys</h2>
-    <div class="resp-text">Texto responsivo de prueba</div>
-    <div class="resp-text"> texto responsivo</div>
+        <div class="bg-secundary-dark-4">texto de prueba </div>
+        <div class="bg-secundary-dark-3">texto de prueba </div>
+        <div class="bg-secundary-dark-2">texto de prueba </div>
+        <div class="bg-secundary-dark-1">texto de prueba </div>
+        <div class="bg-secundary">texto de prueba </div>
+        <div class="bg-secundary-light-1">texto de prueba </div>
+        <div class="bg-secundary-light-2">texto de prueba </div>
+        <div class="bg-secundary-light-3">texto de prueba </div>
+        <div class="bg-secundary-light-4">texto de prueba </div>
+        <br>
+        <div class="bg-info-dark-4">texto de prueba </div>
+        <div class="bg-info-dark-3">texto de prueba </div>
+        <div class="bg-info-dark-2">texto de prueba </div>
+        <div class="bg-info-dark-1">texto de prueba </div>
+        <div class="bg-info">texto de prueba </div>
+        <div class="bg-info-light-1">texto de prueba </div>
+        <div class="bg-info-light-2">texto de prueba </div>
+        <div class="bg-info-light-3">texto de prueba </div>
+        <div class="bg-info-light-4">texto de prueba </div>
+        <br>
+        <H2>Botones</H2>
+        <a href="#" class="btn-primary text-white"> Haz click</a>
+        <a href="#" class="btn-secundary text-white">Haz click</a>
+        <a href="#" class="btn-info text-white">Haz click</a>
+        <a href="#" class="btn-error text-white">Haz click</a>
+        <a href="#" class="btn-black text-white">Haz click</a>
+        <a href="#" class="btn-white text-black">Haz click</a>
+        <H2>Botones</H2>
+        <a href="#" class="btn-outline-primary text-primary"> Haz click</a>
+        <a href="#" class="btn-outline-secundary text-secundary">Haz click</a>
+        <a href="#" class="btn-outline-info text-info">Haz click</a>
+        <a href="#" class="btn-outline-error text-error">Haz click</a>
+        <a href="#" class="btn-outline-black text-black">Haz click</a>
+        <a href="#" class="btn-outline-white text-black">Haz click</a>
+        <br>
+        <h1 class="btn-primary font-sm">HOLA MUNDO DESDE SASS</h1>
+        <h1 class="btn-secundary font-xxl">HOLA MUNDO DESDE SASS</h1>
+        <h1 class="bg-info-light-4 mb-2">HOLA MUNDO DESDE SASS</h1>
+        <h1 class="bg-info-dark-1 d-f">HOLA MUNDO DESDE SASS</h1>
+        <h1 class="o-10">HOLA MUNDO DESDE SASS</h1>
+        <h1 class="o-30">HOLA MUNDO DESDE SASS</h1>
+        <h1 class="o-60">HOLA MUNDO DESDE SASS</h1>
+        <h1 class="o-80">HOLA MUNDO DESDE SASS</h1>
 
-    
-    
+        <h1 class="btn-outline-info o-50">HOLA MUNDO DESDE SASS</h1>
+        <h1 class="br-xs">HOLA MUNDO DESDE SASS</h1>
+
+        <h1 class="btn-error mb-4">HOLA MUNDO DESDE SASS</h1>
+
+        <h2 class="mb-2"> Media Querys</h2>
+        <!--<div class="resp-text">Texto responsivo de prueba</div>
+        <div class="resp-text"> texto responsivo</div>-->
+        <hr class="mt-4 mb-4">
+        <h2 class="mb-2">Grid</h2>
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <h3 class="card-title">Articulo 1</h3>
+                    <p class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum est hic
+                        quaerat, dicta ea porro culpa nisi libero atque eius voluptatibus sed iusto magnam dolorum.
+                        Iusto corporis eum tempore excepturi?</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <h3 class="card-title">Articulo 1</h3>
+                    <p class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum est hic
+                        quaerat, dicta ea porro culpa nisi libero atque eius voluptatibus sed iusto magnam dolorum.
+                        Iusto corporis eum tempore excepturi?</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <h3 class="card-title">Articulo 1</h3>
+                    <p class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum est hic
+                        quaerat, dicta ea porro culpa nisi libero atque eius voluptatibus sed iusto magnam dolorum.
+                        Iusto corporis eum tempore excepturi?</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <h3 class="card-title">Articulo 1</h3>
+                    <p class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum est hic
+                        quaerat, dicta ea porro culpa nisi libero atque eius voluptatibus sed iusto magnam dolorum.
+                        Iusto corporis eum tempore excepturi?</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <h3 class="card-title">Articulo 1</h3>
+                    <p class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum est hic
+                        quaerat, dicta ea porro culpa nisi libero atque eius voluptatibus sed iusto magnam dolorum.
+                        Iusto corporis eum tempore excepturi?</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <h3 class="card-title">Articulo 1</h3>
+                    <p class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum est hic
+                        quaerat, dicta ea porro culpa nisi libero atque eius voluptatibus sed iusto magnam dolorum.
+                        Iusto corporis eum tempore excepturi?</p>
+                </div>
+            </div>
+
+        </div>
 
 
+
+
+    </main>
 </body>
+
 </html>

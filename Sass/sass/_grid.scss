@@ -1,0 +1,30 @@
+@use "breakpoints" as b;
+//Definir nro columnas
+$grid-cols: 12;
+
+//Clases de layout
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat($grid-cols,1fr); //se repite lo que se pone en $grid cols
+    gap: 20px;
+}
+
+//Class col
+@each $k, $value in b.$breakpoints{
+    @include b.breakpoint($value){
+        @for $i from 1 through $grid-cols{
+            .col-#{$k}-#{$i}{
+                grid-column: span $i;
+            }
+        }
+    }
+}
