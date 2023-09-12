@@ -6,10 +6,11 @@ $sidebar-width: 300px;
     display: none;
 }
 nav {
-    position: sticky;
+    
     //top: 0;
     top: -10px;   
-    bottom: 32px;    
+    bottom: 32px;   
+    position: absolute; 
 }
 .navbar{
     &:has(input[type="checkbox"]:checked){
@@ -84,6 +85,7 @@ nav {
         }
     }
 
-    position:absolute;
+    position: sticky;
+    z-index: 99;
 }
 

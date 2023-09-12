@@ -34,6 +34,10 @@ img {
     cursor: pointer;
 
 };*/
+.html {
+  background-image: "https://static.vecteezy.com/system/resources/previews/000/115/488/non_2x/free-vector-soft-color-degrade-background.jpg";
+}
+
 .card {
   display: block;
   padding: 0.75rem;
@@ -59,6 +63,7 @@ img {
 }
 .card-body {
   font-size: calc(15px + 0.3966125vw);
+  text-align: center;
 }
 .card-body a {
   text-decoration: underline;
@@ -273,9 +278,9 @@ img {
 }
 
 nav {
-  position: sticky;
   top: -10px;
   bottom: 32px;
+  position: absolute;
 }
 
 .navbar {
@@ -288,7 +293,8 @@ nav {
   min-height: 100vh;
   padding: 1rem;
   transition: 0.2 ease-in-out;
-  position: absolute;
+  position: sticky;
+  z-index: 99;
 }
 .navbar:has(input[type=checkbox]:checked) {
   width: 300px;
@@ -931,11 +937,36 @@ nav {
   box-sizing: border-box;
   padding-left: 6rem;
 }
+.container .galeria {
+  display: flex;
+  width: 100%;
+  height: 450px;
+}
+.container .galeria img {
+  width: 0px;
+  flex-grow: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(80%);
+  transition: 0.7s ease;
+}
+.container .galeria img:hover {
+  width: 500px;
+  opacity: 1;
+  filter: brightness(130%);
+}
 
 .row {
+  margin-top: 32px;
+  margin-right: -200px;
+  margin-left: -100pxs;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 20px;
+}
+
+.card {
+  margin: 5px;
 }
 
 @media (min-width: 0) {

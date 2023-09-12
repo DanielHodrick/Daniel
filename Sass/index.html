@@ -7,6 +7,24 @@
     <title>Uso de Sass</title>
     <link rel="stylesheet" href="dist/css/styles.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+	<link href="/templates/home_amasbolivia/pickerdate/themes/classic.css" rel="stylesheet">
+	<link href="/templates/home_amasbolivia/pickerdate/themes/classic.date.css" rel="stylesheet">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.5.3/picker.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.5.3/picker.date.js"></script>
+
+	<link href="/templates/home_amasbolivia/css/jquery.fancybox.css" rel="stylesheet">
+	<link href="/templates/home_amasbolivia/css/main_b.css" rel="stylesheet">
+	<link href="/templates/home_amasbolivia/css/animate.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/templates/home_amasbolivia/lightpick/css/lightpick.css">
+	<link href="/templates/home_amasbolivia/css/searchBar2.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -17,7 +35,7 @@
                 <h1>App</h1>
             </div>
             <div class="menu-toggle-warp">
-                <input type="checkbox"  class="btn-menu" name="btn-menu" id="btn-menu" >
+                <input type="checkbox" class="btn-menu" name="btn-menu" id="btn-menu">
                 <!-- el input se vincula con el laber con el for del laber y eñ ide de input-->
                 <label for="btn-menu" class="material-icons menu-toggle">double_arrow</label>
             </div>
@@ -51,105 +69,20 @@
         </aside>
     </nav>
     <main class="container">
-        <!--
-        <h1>HOLA MUNDO DESDE SASS</h1>
-        <a href="#">link de hola mundo desde Sass</a>
-        <p class="error">Mensaje de error</p>
-        <p class="notificacion">Mensaje de notificacion</p> 
-        <button class="button">No presionar el Haz click</button>-->
-
-        <h2> Cards </h2>
-        <div class="card">
-            <h1 class="card-title"> Titulo del card</h1>
-            <p class="card-body"> Cuerpo del card Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                adipisci unde facere deserunt pariatur veniam voluptas fugiat omnis sapiente delectus! Nesciunt, commodi
-                omnis! Maiores, sunt perspiciatis mollitia aliquid reiciendis cumque. <a href="#">leer mas..</a> </p>
+        <div class="galeria">
+            <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2021/12/iveco-camion-autonomo-2565959.jpg?tf=3840x"
+                alt="">
+            <img src="https://www.lubricantesenvenezuela.com/wp-content/uploads/2019/06/Todo-sobre-camiones.jpg" alt="">
+            <img src="https://3.bp.blogspot.com/-Q_fH1J-LQJ8/UcjXNuGqvXI/AAAAAAAAGPQ/ZzFwmeclM9U/s1600/Descargar+Pack+Increibles+fotos+de+vehiculos+HD+(373).jpg"
+                alt="">
+            <img src="https://i.ytimg.com/vi/k3--D5q-zls/maxresdefault.jpg" alt="">
+            <img src="https://www.rymeautomotive.com/wp-content/uploads/2023/01/camion-iveco-s-way-2022.jpg" alt="">
 
         </div>
-        <h2>Colores</h2>
-        <div class="text-primary">Texto de prueba </div>
-        <div class="text-secundary">Texto de prueba </div>
-        <div class="text-info">Texto de prueba </div>
-        <div class="text-error">Texto de prueba </div>
-        <div class="text-white">Texto de prueba </div>
-        <div class="text-black">Texto de prueba </div>
-        <h2> Fondo de colores</h2>
-        <div class="bg-primary">texto de prueba </div>
-        <div class="bg-secundary">texto de prueba </div>
-        <div class="bg-info">texto de prueba </div>
-        <div class="bg-error">texto de prueba </div>
-        <div class="bg-white">texto de prueba </div>
-        <div class="bg-black">texto de prueba </div>
 
-        <br>
-        <div class="bg-primary-dark-4">texto de prueba </div>
-        <div class="bg-primary-dark-3">texto de prueba </div>
-        <div class="bg-primary-dark-2">texto de prueba </div>
-        <div class="bg-primary-dark-1">texto de prueba </div>
-        <div class="bg-primary">texto de prueba </div>
-        <div class="bg-primary-light-1">texto de prueba </div>
-        <div class="bg-primary-light-2">texto de prueba </div>
-        <div class="bg-primary-light-3">texto de prueba </div>
-        <div class="bg-primary-light-4">texto de prueba </div>
-        <br>
-
-        <div class="bg-secundary-dark-4">texto de prueba </div>
-        <div class="bg-secundary-dark-3">texto de prueba </div>
-        <div class="bg-secundary-dark-2">texto de prueba </div>
-        <div class="bg-secundary-dark-1">texto de prueba </div>
-        <div class="bg-secundary">texto de prueba </div>
-        <div class="bg-secundary-light-1">texto de prueba </div>
-        <div class="bg-secundary-light-2">texto de prueba </div>
-        <div class="bg-secundary-light-3">texto de prueba </div>
-        <div class="bg-secundary-light-4">texto de prueba </div>
-        <br>
-        <div class="bg-info-dark-4">texto de prueba </div>
-        <div class="bg-info-dark-3">texto de prueba </div>
-        <div class="bg-info-dark-2">texto de prueba </div>
-        <div class="bg-info-dark-1">texto de prueba </div>
-        <div class="bg-info">texto de prueba </div>
-        <div class="bg-info-light-1">texto de prueba </div>
-        <div class="bg-info-light-2">texto de prueba </div>
-        <div class="bg-info-light-3">texto de prueba </div>
-        <div class="bg-info-light-4">texto de prueba </div>
-        <br>
-        <H2>Botones</H2>
-        <a href="#" class="btn-primary text-white"> Haz click</a>
-        <a href="#" class="btn-secundary text-white">Haz click</a>
-        <a href="#" class="btn-info text-white">Haz click</a>
-        <a href="#" class="btn-error text-white">Haz click</a>
-        <a href="#" class="btn-black text-white">Haz click</a>
-        <a href="#" class="btn-white text-black">Haz click</a>
-        <H2>Botones</H2>
-        <a href="#" class="btn-outline-primary text-primary"> Haz click</a>
-        <a href="#" class="btn-outline-secundary text-secundary">Haz click</a>
-        <a href="#" class="btn-outline-info text-info">Haz click</a>
-        <a href="#" class="btn-outline-error text-error">Haz click</a>
-        <a href="#" class="btn-outline-black text-black">Haz click</a>
-        <a href="#" class="btn-outline-white text-black">Haz click</a>
-        <br>
-        <h1 class="btn-primary font-sm">HOLA MUNDO DESDE SASS</h1>
-        <h1 class="btn-secundary font-xxl">HOLA MUNDO DESDE SASS</h1>
-        <h1 class="bg-info-light-4 mb-2">HOLA MUNDO DESDE SASS</h1>
-        <h1 class="bg-info-dark-1 d-f">HOLA MUNDO DESDE SASS</h1>
-        <h1 class="o-10">HOLA MUNDO DESDE SASS</h1>
-        <h1 class="o-30">HOLA MUNDO DESDE SASS</h1>
-        <h1 class="o-60">HOLA MUNDO DESDE SASS</h1>
-        <h1 class="o-80">HOLA MUNDO DESDE SASS</h1>
-
-        <h1 class="btn-outline-info o-50">HOLA MUNDO DESDE SASS</h1>
-        <h1 class="br-xs">HOLA MUNDO DESDE SASS</h1>
-
-        <h1 class="btn-error mb-4">HOLA MUNDO DESDE SASS</h1>
-
-        <h2 class="mb-2"> Media Querys</h2>
-        <!--<div class="resp-text">Texto responsivo de prueba</div>
-        <div class="resp-text"> texto responsivo</div>-->
-        <hr class="mt-4 mb-4">
-        <h2 class="mb-2">Grid</h2>
         <div class="row">
             <div class="col-xs-12 col-md-6 col-lg-3">
-                <div class="card">
+                <div class="card-body">
                     <h3 class="card-title">Articulo 1</h3>
                     <p class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum est hic
                         quaerat, dicta ea porro culpa nisi libero atque eius voluptatibus sed iusto magnam dolorum.
@@ -158,6 +91,13 @@
             </div>
             <div class="col-xs-12 col-md-6 col-lg-3">
                 <div class="card">
+                    
+                    <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2021/12/iveco-camion-autonomo-2565959.jpg?tf=3840x"
+                alt="">
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <div class="card-body">
                     <h3 class="card-title">Articulo 1</h3>
                     <p class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum est hic
                         quaerat, dicta ea porro culpa nisi libero atque eius voluptatibus sed iusto magnam dolorum.
@@ -166,6 +106,13 @@
             </div>
             <div class="col-xs-12 col-md-6 col-lg-3">
                 <div class="card">
+                    
+                    <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2021/12/iveco-camion-autonomo-2565959.jpg?tf=3840x"
+                alt="">
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <div class="card-body">
                     <h3 class="card-title">Articulo 1</h3>
                     <p class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum est hic
                         quaerat, dicta ea porro culpa nisi libero atque eius voluptatibus sed iusto magnam dolorum.
@@ -174,33 +121,141 @@
             </div>
             <div class="col-xs-12 col-md-6 col-lg-3">
                 <div class="card">
-                    <h3 class="card-title">Articulo 1</h3>
-                    <p class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum est hic
-                        quaerat, dicta ea porro culpa nisi libero atque eius voluptatibus sed iusto magnam dolorum.
-                        Iusto corporis eum tempore excepturi?</p>
+                    
+                    <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2021/12/iveco-camion-autonomo-2565959.jpg?tf=3840x"
+                alt="">
                 </div>
             </div>
-            <div class="col-xs-12 col-md-6 col-lg-3">
-                <div class="card">
-                    <h3 class="card-title">Articulo 1</h3>
-                    <p class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum est hic
-                        quaerat, dicta ea porro culpa nisi libero atque eius voluptatibus sed iusto magnam dolorum.
-                        Iusto corporis eum tempore excepturi?</p>
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-6 col-lg-3">
-                <div class="card">
-                    <h3 class="card-title">Articulo 1</h3>
-                    <p class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum est hic
-                        quaerat, dicta ea porro culpa nisi libero atque eius voluptatibus sed iusto magnam dolorum.
-                        Iusto corporis eum tempore excepturi?</p>
-                </div>
-            </div>
+            
 
         </div>
 
+        <div class="bc-panel" id="bc-panel-vuelos">
+            <form action="https://www.amaszonas.com/scripts/reservas/ventas_new.php" method="post" name="reservas" id="reservas" target="_blank" autocomplete="off">
+                <div class="bc-panel-form bc-abrir">
+                    <div class="bc-label">Origen</div>
+                        <input id="bc-origen" type="text" name="bc-origen" readonly onfocus="this.removeAttribute('readonly');" style="background-color: white;" placeholder="Ciudad o aeropuerto">
+                        <input id="origen" type="hidden" name="origen" value="">
+                    <div class="dropdown-select bc-select-origen">
+                        <div class="bc-head-menus">
+                            <a href="javascript:void(0)" class="bc-cerrar bc-cerrar-origen"><i class="fa fa-times"></i></a>
+                            <h3>Origen</h3>
+                        </div>
+                        <p class="bc-select-titulo"><i class="fa fa-building"></i> Todas las ciudades</p>
+                        <ul id="listorigen">
+                                                           <li id="ASU" role="option" class="li-origen" data-input="Asunción"><span> <strong>Asunción</strong>    Paraguay    <strong>ASU</strong></span></li>
+                                                              <li id="CBB" role="option" class="li-origen" data-input="Cochabamba"><span> <strong>Cochabamba</strong>    Bolivia    <strong>CBB</strong></span></li>
+                                                              <li id="IQQ" role="option" class="li-origen" data-input="Iquique"><span> <strong>Iquique</strong>    Chile    <strong>IQQ</strong></span></li>
+                                                              <li id="LPB" role="option" class="li-origen" data-input="La Paz"><span> <strong>La Paz</strong>    Bolivia    <strong>LPB</strong></span></li>
+                                                              <li id="VVI" role="option" class="li-origen" data-input="Santa Cruz"><span> <strong>Santa Cruz</strong>    Bolivia    <strong>VVI</strong></span></li>
+                                                              <li id="SRE" role="option" class="li-origen" data-input="Sucre"><span> <strong>Sucre</strong>    Bolivia    <strong>SRE</strong></span></li>
+                                                       </ul>
+                        <p>&nbsp;</p>
+                        <p class="bc-select-titulo"><i class="fa fa-plane"></i> Todos los aeropuertos</p>
+                                                </div>
+                </div><div class="bc-panel-form bc-abrir">
+                    <div class="bc-label">Destino</div>
+                        <input id="bc-destino" type="text" name="bc-destino" readonly onfocus="this.removeAttribute('readonly');" style="background-color: white;" placeholder="Ciudad o aeropuerto">
+                        <input id="destino" type="hidden" name="destino" value="">
+                        <input id="dias" type="hidden" name="diasselect" value="">
+                    <div class="dropdown-select bc-select-destino">
+                        <div class="bc-head-menus">
+                            <a href="javascript:void(0)" class="bc-cerrar bc-cerrar-destino"><i class="fa fa-times"></i></a>
+                            <h3>Destino</h3>
+                        </div>
+                        <p class="bc-select-titulo"><i class="fa fa-building"></i> Todas las ciudades</p>
 
+                                                        <ul id="listdestino" class="search-results">
+                                                                         <li id="ASU" role="option" class="li-destino" data-input="Asunción" value="1111111"> <strong>Asunción</strong>    Paraguay    <strong>ASU</strong></li>
+                                                                         <li id="CBB" role="option" class="li-destino" data-input="Cochabamba" value="1111111"> <strong>Cochabamba</strong>    Bolivia    <strong>CBB</strong></li>
+                                                                         <li id="IQQ" role="option" class="li-destino" data-input="Iquique" value="1111111"> <strong>Iquique</strong>    Chile    <strong>IQQ</strong></li>
+                                                                         <li id="LPB" role="option" class="li-destino" data-input="La Paz" value="1111111"> <strong>La Paz</strong>    Bolivia    <strong>LPB</strong></li>
+                                                                         <li id="VVI" role="option" class="li-destino" data-input="Santa Cruz" value="1111111"> <strong>Santa Cruz</strong>    Bolivia    <strong>VVI</strong></li>
+                                                                         <li id="SRE" role="option" class="li-destino" data-input="Sucre" value="1111111"> <strong>Sucre</strong>    Bolivia    <strong>SRE</strong></li>
+                                                                </ul>
+                                                    <p>&nbsp;</p>
+                        <p class="bc-select-titulo"><i class="fa fa-plane"></i> Todos los aeropuertos</p>
+                                                </div>
+                </div><div id="diasdesabilitados" class="bc-panel-form bc-abrir bc-calendarios">
+                    <div class="bc-label">Ida / Vuelta</div>
+                    <i class="fa fa-calendar icono-calendario"></i><input type="text" name="bc-ida-vuelta" autocomplete="off" id="bc-ida-vuelta">
+                    <div id="mensajesorigen" class="dropdown-select bc-select-calendarios">
+                        <div class="bc-head-menus">
+                            <a href="javascript:void(0)" class="bc-cerrar bc-cerrar-fechas"><i class="fa fa-times"></i></a>
+                            <h3>Fechas</h3>
+                        </div>
+                        <label class="radio-inline"><input id="radioidavuelta" type="radio" name="tipoviaje" value="2" checked="checked"> Ida y vuelta</label>
+                        <label class="radio-inline"><input id="radiosoloida" type="radio" name="tipoviaje" value="1"> Sólo ida</label>
+                        <!--<input type="text" id="bc-datepicker" disabled="disabled" value="" style="color: #FFF">-->
+                        <input id="fecIda" type="text" name="fecIda" value="" style="color: #FFF">
+                        <input name="fechaida" id="fechaida" type="hidden" value="">
+                           <input type="hidden" name="horaIda" value="">
 
+                        <input id="fecVuelta" type="text" name="fecVuelta" value="" style="color: #FFF">
+                           <input name="fechaVuelta" id="fechaVuelta" type="hidden" value="">
+                        <input type="hidden" name="horaVuelta" value="">
+            
+                    </div>
+                </div><div class="bc-panel-form bc-abrir bc-personas">
+                    <div class="bc-label"><span id="bc-adultos">1 Adulto</span>, <span id="bc-ninos">0 Niños</span>, <span id="bc-bebes">0 Infantes</span> <i class="fa fa-chevron-down" style="margin-left: 5px;"></i></div>
+                    <!--input type="text" disabled="disabled" value="" style="color: #FFF"-->
+                    <div class="dropdown-select bc-select-personas">
+                        <div class="bc-head-menus">
+                            <a href="javascript:void(0)" class="bc-cerrar bc-cerrar-personas btn-link">Cerrar</a>
+                            <h3>Personas</h3>
+                        </div>
+                        <ul class="list-person">
+                            <li class="list-person__item">
+                                <div class="quantity quantity1">
+                                    <span class="minus"><i class="fa fa-minus"></i></span> <input class="inputQty" min="1" type="number" value="1" max="9"> <input id="adultos" type="hidden" name="adultos" value="1">
+                                     <span class="plus"><i class="fa fa-plus"></i></span>
+                                </div>
+                                    <span class="name">Adultos</span><br>
+                                    <span class="bc-small">+12 años a la fecha del viaje</span>
+                            </li>
+                            <li>
+                                <hr class="hr-height">
+                            </li>
+                            <li class="list-person__item">
+                                <div class="quantity quantity2">
+                                    <span class="minus"><i class="fa fa-minus"></i></span> <input class="inputQty" min="0" type="number" value="0" max="9"> <input id="menores" type="hidden" name="menores"> <span class="plus"><i class="fa fa-plus"></i></span>
+                                </div>
+                                    <span class="name">Niños</span><br>
+                                    <span class="bc-small">2-11 años a la fecha del viaje</span>
+                            </li>
+                            <li>
+                                <hr class="hr-height">
+                            </li>
+                            <li class="list-person__item">
+                                <div class="quantity quantity3">
+                                    <span class="minus"><i class="fa fa-minus"></i></span> <input class="inputQty" min="0" type="number" value="0" max="9"> <input id="bebes" type="hidden" name="bebes"> <span class="plus"><i class="fa fa-plus"></i></span>
+                                </div>
+                                    <span class="name">Infantes</span><br>
+                                    <span class="bc-small">7 días a 23 meses a la fecha del viaje</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                    <input type="hidden" name="cabina" value="Y">
+                    <input name="msn1" id="msn1" type="hidden" value="El número de bebés no puede ser mayor al de adultos">
+                    <input name="msn2" id="msn2" type="hidden" value="El número de niños no puede ser mayor al de adultos">
+                    <input name="msn3" id="msn3" type="hidden" value="Código de reserva es requerido">
+                    <input name="msn4" id="msn4" type="hidden" value="Apellido es requerido">
+                <div class="bc-panel-boton">
+                    <button id="login_submit" type="submit">Buscar</button>
+                </div>
+
+                <div class="bc-opciones-avanzadas">
+                    <a href="javascript:void(0)">Opciones avanzadas</a>
+                </div>
+                <div class="bc-opciones-cont row">
+                    <div class="col-lg-9 col-md-8 col-sm-7">
+                        <i class="fa fa-ticket"></i> <span>CUPÓN DE AHORRO</span> <input type="text" name="CodigoDes" maxlength="10" id="cod-desc">
+                    </div>
+                </div>
+            </form>
+        </div>
+        
 
     </main>
 </body>

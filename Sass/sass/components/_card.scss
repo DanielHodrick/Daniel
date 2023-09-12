@@ -1,5 +1,8 @@
 @use 'sass:math';
 @use '../variables' as v;
+.html{
+    background-image: src="https://static.vecteezy.com/system/resources/previews/000/115/488/non_2x/free-vector-soft-color-degrade-background.jpg";
+}
 .card{
     display: block;
     //background-color: v.$white;
@@ -30,6 +33,7 @@
     }
     &-body{
         font-size: v.$base-font-size;
+        text-align: center;
         a{
             text-decoration: underline;
         }
