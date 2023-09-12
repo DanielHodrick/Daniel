@@ -274,7 +274,8 @@ img {
 
 nav {
   position: sticky;
-  top: 0;
+  top: -10px;
+  bottom: 32px;
 }
 
 .navbar {
@@ -287,6 +288,7 @@ nav {
   min-height: 100vh;
   padding: 1rem;
   transition: 0.2 ease-in-out;
+  position: absolute;
 }
 .navbar:has(input[type=checkbox]:checked) {
   width: 300px;
@@ -322,6 +324,27 @@ nav {
   color: grey;
   font-size: calc(15px + 0.3966125vw);
   margin-bottom: 0.75rem;
+}
+.navbar .menu .button {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem, 1rem;
+  transition: 0.2 s ease-in-out;
+}
+.navbar .menu .button .material-icons {
+  font-size: 2rem;
+  color: #fff;
+}
+.navbar .menu .button .text {
+  margin-left: 1rem;
+  color: #fff;
+}
+.navbar .menu .button:hover {
+  background-color: cornflowerblue;
+}
+.navbar .menu .button:hover .material-icons, .navbar .menu .button:hover .text {
+  color: #12439c;
 }
 
 .text-primary {
@@ -906,6 +929,7 @@ nav {
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
+  padding-left: 6rem;
 }
 
 .row {

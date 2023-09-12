@@ -1,5 +1,5 @@
 @use '../variables' as v;
-
+@use'sass:color';
 $sidebar-width: 300px;
 
 .btn-menu{
@@ -7,7 +7,9 @@ $sidebar-width: 300px;
 }
 nav {
     position: sticky;
-    top: 0;    
+    //top: 0;
+    top: -10px;   
+    bottom: 32px;    
 }
 .navbar{
     &:has(input[type="checkbox"]:checked){
@@ -56,6 +58,32 @@ nav {
         font-size: v.$base-font-size;
         margin-bottom: v.$base-margin;
     }
+    .menu{
+        .button{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            padding: 0.5rem, 1rem;
+            transition: 0.2 s ease-in-out;
+            .material-icons{
+                font-size: 2rem;
+                color: v.$white;
 
+            }
+            .text{
+                margin-left: 1rem;
+                color: v.$white;
+            }
+            &:hover{
+                background-color: v.$primary;
+                .material-icons, .text{
+                    color: color.adjust(v.$primary, $lightness: -32%);
+
+                }
+            }
+        }
+    }
+
+    position: absolute;
 }
 
