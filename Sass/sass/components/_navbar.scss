@@ -8,15 +8,17 @@ $sidebar-width: 300px;
 nav {
     
     //top: 0;
-    top: -10px;   
+    top: 0;   
     bottom: 32px;   
     position: absolute; 
+    padding-left: -3rem;
+    left: 12px;
 }
 .navbar{
     &:has(input[type="checkbox"]:checked){
         width: $sidebar-width;
         .menu-toggle-warp{
-            top: -2rem;
+            top: -1rem;
             .menu-toggle{
                 rotate: z -180deg;
             }
@@ -28,7 +30,7 @@ nav {
     }
     display: flex;
     flex-direction: column;
-    background-color: v.$black;
+    background-color: rgba(13, 179, 221, 0.486);
     color: v.$white;
     width: calc(1rem + 32px);
     overflow: hidden;
