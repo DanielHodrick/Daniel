@@ -1,0 +1,28 @@
+.container {
+    display: grid;
+    gap: 4px;
+    background-color: blue;
+    padding: 0px;
+    grid-template-columns: 0.2fr 2fr 2fr 2fr;
+    /*grid-template-rows: repeat(5 2fr);
+    grid-template-columns: [X0] 1fr [X1] 20fr  [X2] 1fr [X3];*/
+    grid-template-rows: [Y0]100px [Y1] 400px [Y2] 400px [Y3] 400px [Y4] 100px;
+
+    grid-template-areas: "header     header      header     header"
+                        "side       main        main2        main2"
+                        "side       section     section     section2"
+                        "side       content     content2    content3"
+                        "side       footer      footer      footer";
+
+
+
+
+}
+
+.grid-item {
+    background-color: white;
+    padding: 2rem;
+    font-size: 24pt;
+    text-align: center;
+    border: solid 1px blue;
+}
