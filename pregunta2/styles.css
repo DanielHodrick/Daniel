@@ -69,3 +69,54 @@
 .container :nth-child(10) {
     grid-area: footer;
 }
+
+@media screen and (max-width: 1024px) {
+    .container {
+        grid-template-columns: 0.2fr 2fr 2fr 2fr;
+        grid-template-rows: [Y0]100px [Y1] 200px [Y2] 200px [Y3] 200px [Y4] 100px;
+    
+        grid-template-areas: "header     header      header     header"
+                            "side       main        main2        main2"
+                            "side       section     section     section2"
+                            "side       content     content2    content3"
+                            "side       footer      footer      footer";
+        }
+
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 20% 40% 40%;
+        grid-template-rows: [Y0]100px [Y1] 100px [Y2] 100px [Y3] 100px [Y4] 100px [Y5] 100px [Y6] 50px;
+        /*grid-template-rows: 0.5fr repeat(5 2fr) 0.5fr;*/
+        grid-template-areas:
+            "header     header      header"
+            "side       main        main"
+            "side       main2        main2"
+            "side       section     section2"
+            "side       content     content2"
+            "side       content3     content3"
+            "footer     footer      footer";
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: [Y0]100px [Y1] 100px [Y2] 100px [Y3] 100px [Y4] 100px [Y5] 100px [Y6] 100px [Y7] 100px [Y8] 100px [Y9]100px;
+        /*grid-template-rows: 0.5fr 0.4fr repeat(7 0.6fr) 0.5fr;*/
+        grid-template-areas:
+            "header"
+            "side"
+            "main"
+            "main2"
+            "section"
+            "section2"
+            "content"
+            "content2"
+            "content3"
+            "footer";
+    }
+
+}
