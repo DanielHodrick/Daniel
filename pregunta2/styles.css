@@ -26,3 +26,46 @@
     text-align: center;
     border: solid 1px blue;
 }
+
+/*--- para el grid-template-area----*/
+.container :nth-child(1) {
+    grid-area: header;
+    position: absolute;
+    position: sticky;
+
+}
+
+.container :nth-child(2) {
+    grid-area: side;
+}
+
+.container :nth-child(3) {
+    grid-area: main;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container :nth-child(4) {
+    grid-area: main2;
+}
+
+.container :nth-child(5) {
+    grid-area: section;
+}
+.container :nth-child(6) {
+    grid-area: section2;
+}
+
+
+.container :nth-child(7) {
+    grid-area: content;
+}
+.container :nth-child(8) {
+    grid-area: content2;
+}
+.container :nth-child(9) {
+    grid-area: content3;
+}
+.container :nth-child(10) {
+    grid-area: footer;
+}
