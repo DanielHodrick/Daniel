@@ -7,10 +7,10 @@
     <title>Uso de Sass</title>
     <link rel="stylesheet" href="dist/css/styles.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-
     <nav>
         <aside class="navbar">
             <div class="logo">
@@ -50,159 +50,160 @@
 
         </aside>
     </nav>
-    <main class="container">
-        <!--
-        <h1>HOLA MUNDO DESDE SASS</h1>
-        <a href="#">link de hola mundo desde Sass</a>
-        <p class="error">Mensaje de error</p>
-        <p class="notificacion">Mensaje de notificacion</p> 
-        <button class="button">No presionar el Haz click</button>-->
-
-        <h2> Cards </h2>
-        <div class="card">
-            <h1 class="card-title"> Titulo del card</h1>
-            <p class="card-body"> Cuerpo del card Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                adipisci unde facere deserunt pariatur veniam voluptas fugiat omnis sapiente delectus! Nesciunt, commodi
-                omnis! Maiores, sunt perspiciatis mollitia aliquid reiciendis cumque. <a href="#">leer mas..</a> </p>
-
+    <div class="inicial">
+        
+    
+        <main>
+            <div class="marca">
+                <img src="https://www.elringparts.co.uk/ElringParts/media/images/elring-logo.png" alt="" height="400px" width="400px">
+            </div>
+            <div class="scope">
+                <span style="--i:1;"><img src="https://i.postimg.cc/BQcRL38F/pexels-photo-761963.jpg" alt="not found"></span>
+                <span style="--i:2;"><img src="https://i.postimg.cc/1RWVB11x/pexels-photo-941693.jpg" alt="not found"></span>
+                <span style="--i:3;"><img src="https://i.postimg.cc/CMfHRKfP/woman-2003647-960-720.jpg" alt="not found"></span>
+                <span style="--i:4;"><img src="https://i.postimg.cc/T1rDCpVT/beautiful-1274056-960-720.jpg" alt="not found"></span>
+                <span style="--i:5;"><img src="https://i.postimg.cc/SNf99YQr/woman-1807533-960-720.jpg" alt="not found"></span>
+                <span style="--i:6;"><img src="https://i.postimg.cc/2SHBcpZL/pexels-photo-4664520.jpg" alt="not found"></span>
+                <span style="--i:7;"><img src="https://i.postimg.cc/CxBzNcjw/Opera-Snapshot-2020-07-03-162022-www-freepik-com.png" alt="not found"></span>
+                <span style="--i:8;"><img src="https://i.postimg.cc/0QckxSpt/Opera-Snapshot-2020-07-03-161422-www-freepik-com.png" alt="not found"></span>
+              </div>
+        </main>
+        <div class="tarjetas">
+            <ul class="cards">
+                <li class="cards__item">
+                  <div class="card">
+                    <div class="card__image card__image--fence"></div>
+                    <div class="card__content">
+                      <div class="card__title">Flex</div>
+                      <p class="card__text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto. </p>
+                      <button class="btn btn--block card__btn">Button</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="cards__item">
+                  <div class="card">
+                    <div class="card__image card__image--river"></div>
+                    <div class="card__content">
+                      <div class="card__title">Flex Grow</div>
+                      <p class="card__text">This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.</p>
+                      <button class="btn btn--block card__btn">Button</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="cards__item">
+                  <div class="card">
+                    <div class="card__image card__image--record"></div>
+                    <div class="card__content">
+                      <div class="card__title">Flex Shrink</div>
+                      <p class="card__text">This defines the ability for a flex item to shrink if necessary. Negative numbers are invalid.</p>
+                      <button class="btn btn--block card__btn">Button</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="cards__item">
+                  <div class="card">
+                    <div class="card__image card__image--flowers"></div>
+                    <div class="card__content">
+                      <div class="card__title">Flex Basis</div>
+                      <p class="card__text">This defines the default size of an element before the remaining space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword. The auto keyword means "look at my width or height property."</p>
+                      <button class="btn btn--block card__btn">Button</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
         </div>
-        <h2>Colores</h2>
-        <div class="text-primary">Texto de prueba </div>
-        <div class="text-secundary">Texto de prueba </div>
-        <div class="text-info">Texto de prueba </div>
-        <div class="text-error">Texto de prueba </div>
-        <div class="text-white">Texto de prueba </div>
-        <div class="text-black">Texto de prueba </div>
-        <h2> Fondo de colores</h2>
-        <div class="bg-primary">texto de prueba </div>
-        <div class="bg-secundary">texto de prueba </div>
-        <div class="bg-info">texto de prueba </div>
-        <div class="bg-error">texto de prueba </div>
-        <div class="bg-white">texto de prueba </div>
-        <div class="bg-black">texto de prueba </div>
-
-        <br>
-        <div class="bg-primary-dark-4">texto de prueba </div>
-        <div class="bg-primary-dark-3">texto de prueba </div>
-        <div class="bg-primary-dark-2">texto de prueba </div>
-        <div class="bg-primary-dark-1">texto de prueba </div>
-        <div class="bg-primary">texto de prueba </div>
-        <div class="bg-primary-light-1">texto de prueba </div>
-        <div class="bg-primary-light-2">texto de prueba </div>
-        <div class="bg-primary-light-3">texto de prueba </div>
-        <div class="bg-primary-light-4">texto de prueba </div>
-        <br>
-
-        <div class="bg-secundary-dark-4">texto de prueba </div>
-        <div class="bg-secundary-dark-3">texto de prueba </div>
-        <div class="bg-secundary-dark-2">texto de prueba </div>
-        <div class="bg-secundary-dark-1">texto de prueba </div>
-        <div class="bg-secundary">texto de prueba </div>
-        <div class="bg-secundary-light-1">texto de prueba </div>
-        <div class="bg-secundary-light-2">texto de prueba </div>
-        <div class="bg-secundary-light-3">texto de prueba </div>
-        <div class="bg-secundary-light-4">texto de prueba </div>
-        <br>
-        <div class="bg-info-dark-4">texto de prueba </div>
-        <div class="bg-info-dark-3">texto de prueba </div>
-        <div class="bg-info-dark-2">texto de prueba </div>
-        <div class="bg-info-dark-1">texto de prueba </div>
-        <div class="bg-info">texto de prueba </div>
-        <div class="bg-info-light-1">texto de prueba </div>
-        <div class="bg-info-light-2">texto de prueba </div>
-        <div class="bg-info-light-3">texto de prueba </div>
-        <div class="bg-info-light-4">texto de prueba </div>
-        <br>
-        <H2>Botones</H2>
-        <a href="#" class="btn-primary text-white"> Haz click</a>
-        <a href="#" class="btn-secundary text-white">Haz click</a>
-        <a href="#" class="btn-info text-white">Haz click</a>
-        <a href="#" class="btn-error text-white">Haz click</a>
-        <a href="#" class="btn-black text-white">Haz click</a>
-        <a href="#" class="btn-white text-black">Haz click</a>
-        <H2>Botones</H2>
-        <a href="#" class="btn-outline-primary text-primary"> Haz click</a>
-        <a href="#" class="btn-outline-secundary text-secundary">Haz click</a>
-        <a href="#" class="btn-outline-info text-info">Haz click</a>
-        <a href="#" class="btn-outline-error text-error">Haz click</a>
-        <a href="#" class="btn-outline-black text-black">Haz click</a>
-        <a href="#" class="btn-outline-white text-black">Haz click</a>
-        <br>
-        <h1 class="btn-primary font-sm">HOLA MUNDO DESDE SASS</h1>
-        <h1 class="btn-secundary font-xxl">HOLA MUNDO DESDE SASS</h1>
-        <h1 class="bg-info-light-4 mb-2">HOLA MUNDO DESDE SASS</h1>
-        <h1 class="bg-info-dark-1 d-f">HOLA MUNDO DESDE SASS</h1>
-        <h1 class="o-10">HOLA MUNDO DESDE SASS</h1>
-        <h1 class="o-30">HOLA MUNDO DESDE SASS</h1>
-        <h1 class="o-60">HOLA MUNDO DESDE SASS</h1>
-        <h1 class="o-80">HOLA MUNDO DESDE SASS</h1>
-
-        <h1 class="btn-outline-info o-50">HOLA MUNDO DESDE SASS</h1>
-        <h1 class="br-xs">HOLA MUNDO DESDE SASS</h1>
-
-        <h1 class="btn-error mb-4">HOLA MUNDO DESDE SASS</h1>
-
-        <h2 class="mb-2"> Media Querys</h2>
-        <!--<div class="resp-text">Texto responsivo de prueba</div>
-        <div class="resp-text"> texto responsivo</div>-->
-        <hr class="mt-4 mb-4">
-        <h2 class="mb-2">Grid</h2>
-        <div class="row">
-            <div class="col-xs-12 col-md-6 col-lg-3">
-                <div class="card">
-                    <h3 class="card-title">Articulo 1</h3>
-                    <p class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum est hic
-                        quaerat, dicta ea porro culpa nisi libero atque eius voluptatibus sed iusto magnam dolorum.
-                        Iusto corporis eum tempore excepturi?</p>
+        <content class="container">
+            
+            <h2 class="mb-2"> Media Querys</h2>
+            <!--<div class="resp-text">Texto responsivo de prueba</div>
+            <div class="resp-text"> texto responsivo</div>-->
+            <hr class="mt-4 mb-4">
+            <h2 class="mb-2">Grid</h2>
+            <div class="row">
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <h3 class="card-title">Articulo 1</h3>
+                        <p class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum est hic
+                            quaerat, dicta ea porro culpa nisi libero atque eius voluptatibus sed iusto magnam dolorum.
+                            Iusto corporis eum tempore excepturi?</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-xs-12 col-md-6 col-lg-3">
-                <div class="card">
-                    <h3 class="card-title">Articulo 1</h3>
-                    <p class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum est hic
-                        quaerat, dicta ea porro culpa nisi libero atque eius voluptatibus sed iusto magnam dolorum.
-                        Iusto corporis eum tempore excepturi?</p>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <h3 class="card-title">Articulo 1</h3>
+                        <p class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum est hic
+                            quaerat, dicta ea porro culpa nisi libero atque eius voluptatibus sed iusto magnam dolorum.
+                            Iusto corporis eum tempore excepturi?</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-xs-12 col-md-6 col-lg-3">
-                <div class="card">
-                    <h3 class="card-title">Articulo 1</h3>
-                    <p class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum est hic
-                        quaerat, dicta ea porro culpa nisi libero atque eius voluptatibus sed iusto magnam dolorum.
-                        Iusto corporis eum tempore excepturi?</p>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <h3 class="card-title">Articulo 1</h3>
+                        <p class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum est hic
+                            quaerat, dicta ea porro culpa nisi libero atque eius voluptatibus sed iusto magnam dolorum.
+                            Iusto corporis eum tempore excepturi?</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-xs-12 col-md-6 col-lg-3">
-                <div class="card">
-                    <h3 class="card-title">Articulo 1</h3>
-                    <p class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum est hic
-                        quaerat, dicta ea porro culpa nisi libero atque eius voluptatibus sed iusto magnam dolorum.
-                        Iusto corporis eum tempore excepturi?</p>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <h3 class="card-title">Articulo 1</h3>
+                        <p class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum est hic
+                            quaerat, dicta ea porro culpa nisi libero atque eius voluptatibus sed iusto magnam dolorum.
+                            Iusto corporis eum tempore excepturi?</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-xs-12 col-md-6 col-lg-3">
-                <div class="card">
-                    <h3 class="card-title">Articulo 1</h3>
-                    <p class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum est hic
-                        quaerat, dicta ea porro culpa nisi libero atque eius voluptatibus sed iusto magnam dolorum.
-                        Iusto corporis eum tempore excepturi?</p>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <h3 class="card-title">Articulo 1</h3>
+                        <p class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum est hic
+                            quaerat, dicta ea porro culpa nisi libero atque eius voluptatibus sed iusto magnam dolorum.
+                            Iusto corporis eum tempore excepturi?</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-xs-12 col-md-6 col-lg-3">
-                <div class="card">
-                    <h3 class="card-title">Articulo 1</h3>
-                    <p class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum est hic
-                        quaerat, dicta ea porro culpa nisi libero atque eius voluptatibus sed iusto magnam dolorum.
-                        Iusto corporis eum tempore excepturi?</p>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <h3 class="card-title">Articulo 1</h3>
+                        <p class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum est hic
+                            quaerat, dicta ea porro culpa nisi libero atque eius voluptatibus sed iusto magnam dolorum.
+                            Iusto corporis eum tempore excepturi?</p>
+                    </div>
                 </div>
+    
             </div>
+    
+    
+    
+    
+        </content>
+        
+        <footer>
+            <ul class="iconos">
+                <li style="--i:#a955ff;--j:#ea51ff;">
+                  <span class="icon"><i class="fa fa-facebook"></i></span>
+                  <span class="titulo">facebook</span>
+                </li>
+                <li style="--i:#56CCF2;--j:#2F80ED;">
+                  <span class="icon"><i class="fa fa-twitter"></i></span>
+                  <span class="titulo">twitter</span>
+                </li>
+                <li style="--i:#86be6b;--j:#1baf16;">
+                  <span class="icon"><i class="fa fa-whatsapp"></i></span>
+                  <span class="titulo">whatsapp</span>
+                </li>
+                <li style="--i:#80FF72;--j:#5ec3d4;">
+                  <span class="icon"><i class="fa fa-linkedin"></i></span>
+                  <span class="titulo">linkedin</span>
+                </li>
+                <li style="--i:#FFA9C6;--j:#F434E2;">
+                  <span class="icon"><i class="fa fa-instagram"></i></span>
+                  <span class="titulo">instagram</span>
+                </li>
+              </ul>
+    
+        </footer>
 
-        </div>
-
-
-
-
-    </main>
+    </div>
+    
 </body>
 
 </html>

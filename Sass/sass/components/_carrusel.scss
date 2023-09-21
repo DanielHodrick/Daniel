@@ -1,0 +1,153 @@
+.marca{
+    margin-top: -450px;
+    margin-left: 10%;
+    position: absolute;
+}
+
+main{
+    margin-left: -20%;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: #0f2027;
+    background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+    overflow: hidden;
+  }
+  .scope {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-left: 200px;
+    transform-style: preserve-3d;
+    animation: slid 30s linear infinite;
+  }
+  
+  .scope span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(420px);
+  }
+  .scope span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 120%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: 2s;
+  }
+  .scope span:hover img {
+    transform: translateY(-50px) scale(1.7);
+  }
+  @keyframes slid {
+    0% {
+      transform: perspective(1000px) rotateY(0deg);
+    }
+    100% {
+      transform: perspective(1000px) rotateY(360deg);
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .marca{
+        margin-top: -500px;
+        position: absolute;
+        margin-left: 150px;
+    }
+    .scope {
+        position: absolute;
+        margin-left: 17vh;
+        width: 200px;
+        height: 200px;
+        transform-style: preserve-3d;
+        animation: slid 30s linear infinite;
+      }
+    main{
+        margin-left: -30vh;
+        height: 80vh;
+        
+    }
+    .scope span img {
+        position: center;
+        
+        width: 100%;
+        height: 100%;
+        
+        object-fit: cover;
+        transition: 2s;
+    }
+    .scope span {
+        position: center;
+        width: 100%;
+        height: 100%;
+        transform-origin: center;
+        transform-style: preserve-3d;
+        transform: rotateY(calc(var(--i) * 45deg)) translateZ(330px);
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .marca{
+        margin-top: 200px;
+        position: absolute;
+        margin-left: 150px;
+    }
+    .scope {
+        position: absolute;
+        margin-left: 17vh;
+        margin-top: -150px;
+        width: 150px;
+        height: 150px;
+        transform-style: preserve-3d;
+        animation: slid 30s linear infinite;
+      }
+    main{
+        margin-left: -22vh;
+        height: 65vh;
+        
+    }
+    .scope span img {
+        position: center;
+        
+        width: 100%;
+        height: 100%;
+        
+        object-fit: cover;
+        transition: 2s;
+    }
+    .scope span {
+        position: center;
+        width: 100%;
+        height: 100%;
+        transform-origin: center;
+        transform-style: preserve-3d;
+        transform: rotateY(calc(var(--i) * 45deg)) translateZ(250px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .scope span {
+        position: center;
+        width: 100%;
+        height: 100%;
+        transform-origin: center;
+        transform-style: preserve-3d;
+        transform: rotateY(calc(var(--i) * 45deg)) translateZ(170px);
+    }
+    .scope{
+        width: 140px;
+        height: 140px;
+    }
+
+}

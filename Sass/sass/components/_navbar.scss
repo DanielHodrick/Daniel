@@ -9,7 +9,9 @@ nav {
     position: sticky;
     //top: 0;
     top: -10px;   
-    bottom: 32px;    
+    bottom: 32px; 
+    margin-left: -15px;
+       
 }
 .navbar{
     &:has(input[type="checkbox"]:checked){
@@ -24,6 +26,20 @@ nav {
             opacity: 1;
            
         }
+    }
+    &:hover{
+        width: $sidebar-width;
+        .menu-toggle-warp{
+            top: -2rem;
+            .menu-toggle{
+                rotate: z -180deg;
+            }
+        }
+        h3, .button .text{
+            opacity: 1;
+           
+        }
+        
     }
     display: flex;
     flex-direction: column;
@@ -86,4 +102,19 @@ nav {
 
     position:absolute;
 }
+
+/*.aside{
+    width: 60px;
+    height: 100px;
+    background-color: #222;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #fff;
+    overflow: hidden;
+    border-radius: 1rem 0 0 1rem;
+    transition: width .75s ease;
+    &:hover{
+        width: 200px;
+    }
+}*/
 
