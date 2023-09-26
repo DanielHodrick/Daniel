@@ -1,12 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JQUERY</title>
+    <style>
+        .destacado {
+            background-color: black;
+            color: white;
+            width: 70%;
+        }
+        .violeta{
+            background-color: violet;
+            color: white;
+        }
+        .active{
+            color: blueviolet;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Hola mundo!</h1>
+    <!--<div>
+        <h1>Hola mundo!1</h1>
+        <h1>Hola mundo!2</h1>
+    </div>
+    <div>
+        <h1>Hola mundo!1</h1>
+        <h1>Hola mundo!2</h1>
+    </div>-->
+    <div>
+        <h1>Hola mundo!1</h1>
+        <h1>Hola mundo!2</h1>
+        <h1>Hola mundo!3</h1>
+        <h1>Hola mundo!4</h1>
+        <h1>Hola mundo!5</h1>
+        <h1>Hola mundo!6</h1>
+        <h1>Hola mundo!7</h1>
+        <h1>Hola mundo!8</h1>
+        <h1 class="destacado">Hola mundo!9</h1>
+        <h1 >Hola mundo!10</h1>
+        <h2>Hola desde Jquery!</h2>
+    </div>
+
+    <div>
+        <h2>Lista</h2>
+        <ul>
+            <li>lista 1</li>
+            <li>lista 2</li>
+            <li>lista 3</li>
+            <li>lista 4</li>
+            <li class="active">lista 5</li>
+            <li>lista 6</li>
+            <li>lista 7</li>
+
+        </ul>
+    </div>
+    <div>
+        
+            <label for="year">year</label>
+            <input id="year" type="number" name="year" required>
+            <button class="btn">Calcular</button>
+            
+
+    </div>
     <script src="code.jquery.com_jquery-3.7.1.min.js"></script>
     <script>
         //$(document).ready(
@@ -15,11 +73,78 @@
         //    }
         //);
         $(
-            ()=>{
-                alert("Hola desde Jquery!");
+            () => {
+                //alert("Hola desde Jquery!");
+                //$("h2").hide(); //oculta todos los h2
+                //$("h1:lt(4)").hide(); //oculta todos los menores a 4
+                //$("h1:eq(4)").hide(); //oculta aquel que es igual a 4
+                //$("h1:gt(4)").hide(); //oculta todos aquellos mayores a 4
+                //$('body').find('h1').eq(1).html("HOLA MUNDO DESDE EL H1 3")
+                //let text= $('body').find('h1').eq(1).html();
+                //console.log(text);
+                //$('body').find('h1').eq(1).css('fontSize', '100px'); //cambia el tamaño del h1 2
+                //let size= $('body').find('h1').eq(1).css('fontSize'); //obtiene el tamaño del h1 2
+
+                //console.log(size);  //imprime el valor del tamaño del h1 2
+                //$('H1').css({  //cambia el color y tamaño de todos los h1
+                //    'fontSize': '4rem',
+                //    'color'   : 'blue'
+                //})
+
+                //$('body').find('h1').eq(1).css({'font-size':'100px', 'color':'red'}); //cambia el tamaño y color del h1 - 2
+                $('div h1:nth-child(2)').css('color', 'red'); //propiedad para elegir todos los h1 2 de cada div
+                $('div h1:nth-child(2)').html('soy el segundo');
+
+                //$('h1:nth-child(10)').removeClass('destacado');
+                //$('h1').addClass('destacado');
+                //$('h1').removeClass('destacado');
+                //crea una funcion onclick para añadir y quitar la clase
+                $('h1:nth-child(5)').on('click', function () {
+                    $(this).toggleClass('destacado');
+                });
+
+                $('h1:nth-child(6)').on('mouseover', function () { //cuando entra en el foco 
+                    $(this).toggleClass('destacado');
+                });
+                $('h1:nth-child(6)').on('mouseout', function () { //cuando sale del foco
+                    $(this).toggleClass('destacado');
+                });
+                $('h1:nth-child(5)').width('50%');
+                let ancho = $('h1:nth-child(5)').width();
+                console.log(ancho);
+                let p = $('h1').parent()
+                console.log(p)
+                //$('div').parent().css('background-color', 'blue');
+                //$('h1.destacado').next('h1').css('background-color', 'red');
+                $('h1.destacado').next().css('background-color', 'blue');
+                $('li.active').siblings().css('color', 'red');
+                $('ul li').each(function(idx,el){
+                    console.log(' Elemento '+ idx +' contiene el siguiente elemento '+$(el).html())
+                });
+
+
+                $('.btn').on('click', function(){
+
+                    console.log(2023-$('#year').val());
+                    
+                })
+                
+
+            
+
+              
+
+
+
+
+
+
+
             }
         );
     </script>
-    
+    <h1></h1>
+
 </body>
+
 </html>
