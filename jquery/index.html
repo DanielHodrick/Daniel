@@ -11,17 +11,136 @@
             color: white;
             width: 70%;
         }
-        .violeta{
+
+        .violeta {
             background-color: violet;
             color: white;
         }
-        .active{
+
+        .active {
             color: blueviolet;
+        }
+
+        .bodetr {
+            border: 5px black;
         }
     </style>
 </head>
 
 <body>
+    <div>
+
+        <p>Este es un párrafo.</p>
+        <button id="agregar-borde">Agregar Borde</button>
+
+
+    </div>
+    <div>
+        <ul>
+            <li>Ítem 1</li>
+            <li>Ítem 2</li>
+            <li>Ítem 3</li>
+            <li>Ítem 4</li>
+        </ul>
+        <button id="eliminar-lista">Eliminar Lista</button>
+        <button id="restaurar-lista">Restaurar Lista</button>
+        <button id="añadir-final">Añadir al Final</button>
+        <button id="añadir-principio">Añadir al Principio</button>
+        <button id="eliminar-ultimo">Eliminar Último</button>
+        <button id="eliminar-primer">Eliminar Primer</button>
+        <button id="eliminar-primer-segundo">Eliminar 1º y 2º</button>
+        <button id="eliminar-ultimos">Eliminar Últimos 2</button>
+    </div>
+    <div>
+        <table id="tabla1" border="1">
+            <tr>
+                <td>Columna 1</td>
+                <td>Columna 2</td>
+                <td>Columna 3</td>
+            </tr>
+            <tr>
+                <td>Columna 1</td>
+                <td>Columna 2</td>
+                <td>Columna 3</td>
+            </tr>
+            <tr>
+                <td>Columna 1</td>
+                <td> Columna 2</td>
+                <td>Columna 3</td>
+            </tr>
+        </table>
+
+        <table id="tabla2" border="2">
+            <tr>
+                <td>Casilla 1</td>
+                <td>Casilla 2</td>
+                <td>Casilla 3</td>
+            </tr>
+            <tr>
+                <td>Casilla 4</td>
+                <td>Casilla 5</td>
+                <td>Casilla 6</td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <table id="tabla3" border="2">
+            <tr>
+                <td>Fila 1</td>
+                <td>Fila 1</td>
+                <td>Fila 1</td>
+            </tr>
+            <tr>
+                <td>Fila 2</td>
+                <td>Fila 2</td>
+                <td>Fila 2</td>
+            </tr>
+            <tr>
+                <td>Fila 3</td>
+                <td>Fila 3</td>
+                <td>Fila 3</td>
+            </tr>
+            <tr>
+                <td>Fila 4</td>
+                <td>Fila 4</td>
+                <td>Fila 4</td>
+            </tr>
+            <tr>
+                <td>Fila 5, Columna 1</td>
+                <td>Fila 5, Columna 2</td>
+                <td>Fila 5, Columna 3</td>
+            </tr>
+        </table>
+        <button id="ocultar-pares">Ocultar Filas Pares</button>
+        <button id="cambiar-color-impares">Cambiar Color Filas Impares</button>
+    </div>
+    <div>
+        <div id="miDiv" style="background-color: blue; width: 200px; height: 200px;"></div>
+        <button id="cambiar-estilo">Cambiar Estilo</button>
+    </div>
+
+
+    <div>
+        <form>
+            <input type="text" id="tarea" placeholder="Añadir tarea">
+            <button type="button" id="agregar-tarea">Agregar Tarea</button>
+        </form>
+        <table id="tareas">
+            <thead>
+                <tr>
+                    <th>Tarea</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Las tareas se agregarán aquí -->
+            </tbody>
+        </table>
+    </div>
+
+
+
     <!--<div>
         <h1>Hola mundo!1</h1>
         <h1>Hola mundo!2</h1>
@@ -40,7 +159,7 @@
         <h1>Hola mundo!7</h1>
         <h1>Hola mundo!8</h1>
         <h1 class="destacado">Hola mundo!9</h1>
-        <h1 >Hola mundo!10</h1>
+        <h1>Hola mundo!10</h1>
         <h2>Hola desde Jquery!</h2>
     </div>
 
@@ -57,14 +176,16 @@
 
         </ul>
     </div>
+
     <div>
-        
-            <label for="year">year</label>
-            <input id="year" type="number" name="year" required>
-            <button class="btn">Calcular</button>
-            
+
+        <label for="year">year</label>
+        <input id="year" type="number" name="year" required>
+        <button class="btn">Calcular</button>
+
 
     </div>
+
     <script src="code.jquery.com_jquery-3.7.1.min.js"></script>
     <script>
         //$(document).ready(
@@ -118,21 +239,120 @@
                 //$('h1.destacado').next('h1').css('background-color', 'red');
                 $('h1.destacado').next().css('background-color', 'blue');
                 $('li.active').siblings().css('color', 'red');
-                $('ul li').each(function(idx,el){
-                    console.log(' Elemento '+ idx +' contiene el siguiente elemento '+$(el).html())
+                $('ul li').each(function (idx, el) {
+                    console.log(' Elemento ' + idx + ' contiene el siguiente elemento ' + $(el).html())
                 });
 
 
-                $('.btn').on('click', function(){
+                $('.btn').on('click', function () {
 
-                    console.log(2023-$('#year').val());
-                    
+                    console.log(2023 - $('#year').val());
+
                 })
+
+
+
+                $("#agregar-borde").click(function () {
+                    $("p").css("border", "5px red dashed");
+                });
+
+
+
+
+                // Eliminar la lista completa
+                $("#eliminar-lista").click(function () {
+                    $("ul").empty();
+                });
+
+                // Restaurar lista
+                $("#restaurar-lista").click(function () {
+                    // Agrega los elementos nuevamente a la lista
+                    $("ul").html("<li>Ítem 1</li><li>Ítem 2</li><li>Ítem 3</li><li>Ítem 4</li>");
+                });
+
+                // Añadir un elemento al final de la lista
+                $("#añadir-final").click(function () {
+                    $("ul").append("<li>Nuevo Ítem</li>");
+                });
+
+                // Añadir un elemento al principio de la lista
+                $("#añadir-principio").click(function () {
+                    $("ul").prepend("<li>Nuevo Ítem</li>");
+                });
+
+                // Eliminar el último elemento
+                $("#eliminar-ultimo").click(function () {
+                    $("ul li:last-child").remove();
+                });
+
+                // Eliminar el primer elemento
+                $("#eliminar-primer").click(function () {
+                    $("ul li:first-child").remove();
+                });
+
+                // Eliminar el primero y segundo elemento
+                $("#eliminar-primer-segundo").click(function () {
+                    $("ul li:first-child, ul li:nth-child(2)").remove();
+                });
+
+                // Eliminar los dos últimos
+                $("#eliminar-ultimos").click(function () {
+                    $("ul li:nth-last-child(1), ul li:nth-last-child(2)").remove();
+                });
+
+                $("table#tabla1 tr").click(function () {
+                    $(this).css("background-color", "yellow");
+                });
+                //$("td").css("border", "5px red dashed")
+
+                // Cambiar color de fondo de casilla en la segunda tabla
+                $("table#tabla2 td").hover(
+                    function () {
+                        $(this).css("background-color", "red");
+                    },
+                    function () {
+                        $(this).css("background-color", "white");
+                    }
+                );
+                // Ocultar filas pares
+                $("#ocultar-pares").click(function () {
+                    $("table#tabla3 tr:odd").hide();
+                });
+
+
+                // Cambiar el color de fondo de filas impares
+                $("#cambiar-color-impares").click(function () {
+                    $("table#tabla3 tr:even").css("background-color", "lightgreen");
+                });
+
+
+                $("#cambiar-estilo").click(function(){
+                    // Cambiar opacidad a 0.4 y el ancho y alto a 500px
+                    $("#miDiv").css({"opacity": 0.4, "width": "500px", "height": "500px"});
+                });
+
                 
 
-            
 
-              
+                $("#agregar-tarea").click(function(){
+                    // Obtener el valor del input
+                    var tarea = $("#tarea").val();
+    
+                    // Agregar la tarea a la tabla
+                    $("table#tareas tbody").append("<tr><td>" + tarea + "</td><td><button class='eliminar'>Eliminar</button></td></tr>");
+    
+                    // Limpiar el campo de entrada
+                    $("#tarea").val("");
+    
+                    // Agregar la acción para eliminar la fila
+                    $(".eliminar").click(function(){
+                        $(this).closest("tr").remove();
+                    });
+                });
+
+
+
+
 
 
 
@@ -146,5 +366,57 @@
     <h1></h1>
 
 </body>
+
+
+
+
+<!-- ejercicio 2-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Cambiar color de fondo de filas en la primera tabla
+
+        });
+    </script>
+</head>
+
+<body>
+    <table id="tabla1">
+        <tr>
+            <td>Fila 1, Columna 1</td>
+            <td>Fila 1, Columna 2</td>
+            <td>Fila 1, Columna 3</td>
+        </tr>
+        <tr>
+            <td>Fila 2, Columna 1</td>
+            <td>Fila 2, Columna 2</td>
+            <td>Fila 2, Columna 3</td>
+        </tr>
+        <tr>
+            <td>Fila 3, Columna 1</td>
+            <td>Fila 3, Columna 2</td>
+            <td>Fila 3, Columna 3</td>
+        </tr>
+    </table>
+    <table id="tabla2">
+        <tr>
+            <td>Casilla 1</td>
+            <td>Casilla 2</td>
+            <td>Casilla 3</td>
+        </tr>
+        <tr>
+            <td>Casilla 4</td>
+            <td>Casilla 5</td>
+            <td>Casilla 6</td>
+        </tr>
+    </table>
+</body>
+
+</html>
+
 
 </html>
